@@ -1,0 +1,19 @@
+{
+  "name": "Advent of Code Rust",
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust:bullseye",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          }
+        }
+      },
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
