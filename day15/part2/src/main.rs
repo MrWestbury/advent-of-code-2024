@@ -44,9 +44,17 @@ fn main() {
   }
   println!("Data Load complete");
 
+  println!("Initial Grid:");
+  grid.print();
+
   for c in instructions.chars() {
-    grid.moveme(c);
+    // println!("\n------\nMove: {}", c);
+    
+    grid.move_robot(c);
+    // grid.print(); 
   }
+
+  
 
   println!("Score: {}", grid.get_score()); 
 }
